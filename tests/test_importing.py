@@ -1,11 +1,11 @@
-def test_import_drone():
+def test_import_larva():
     '''
-    Try to import the drone package.
+    Try to import the larva package.
     '''
-    import drone
+    import larva
 
 def test_import_learn():
     '''
     Try to import the learn submodule.
     '''
-    from drone import learn
+    from larva import learn

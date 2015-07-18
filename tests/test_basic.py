@@ -3,7 +3,7 @@ Test cases for simple, basic learning cases.
 '''
 import random
 
-import drone
+import larva
 
 
 def test_constant_offset():
@@ -26,9 +26,9 @@ def test_constant_offset():
     prior = None
 
     for s, t in zip(sources, targets):
-        prior = drone.learn(s, t, prior)
+        prior = larva.learn(s, t, prior)
 
-    target = drone.apply(source(), prior)
+    target = larva.apply(source(), prior)
 
     # FIXME injecting correct value until logic implemented for learning
     import numpy

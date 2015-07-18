@@ -1,4 +1,4 @@
-import drone
+import larva
 import numpy
 
 def test_learn_api():
@@ -9,7 +9,7 @@ def test_learn_api():
     target = [0, 1]
     priors = []
 
-    drone.learn(source, target, *priors)
+    larva.learn(source, target, *priors)
 
 
 def test_apply_api():
@@ -19,7 +19,7 @@ def test_apply_api():
     source = [1, 2, 3]
     priors = []
 
-    drone.apply(source, *priors)
+    larva.apply(source, *priors)
 
 
 def test_learn_returns_ndarray():
@@ -30,7 +30,7 @@ def test_learn_returns_ndarray():
     target = [0, 1]
     priors = []
 
-    learned = drone.learn(source, target, *priors)
+    learned = larva.learn(source, target, *priors)
 
     assert isinstance(learned, numpy.ndarray)
 
@@ -42,6 +42,6 @@ def test_apply_returns_ndarray():
     source = [1,2,3]
     priors = []
 
-    applied = drone.apply(source, *priors)
+    applied = larva.apply(source, *priors)
 
     assert isinstance(applied, numpy.ndarray)

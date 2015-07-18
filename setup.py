@@ -1,10 +1,10 @@
 import setuptools
 
 setuptools.setup(
-    name='drone',
-    description='Drone Tensor Networking Toolkit',
+    name='larva',
+    description='Larva Tensor Networking Library',
     license='MIT',
     packages=[
-        'drone',
+        'larva',
     ],
 )
